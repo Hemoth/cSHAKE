@@ -11,8 +11,11 @@ This instruction is based on running on Ubuntu. If the implementation has to be 
 First of all, we need to update and upgrade advanced packaging tools, then install git and pip.
 
 $ sudo apt-get update
+
 $ sudo apt-get upgrade
+
 $ sudo apt-get install git
+
 $ sudo apt-get install python-pip
 
 Then we need to install python library (cSHAKElib requiring).
@@ -20,14 +23,17 @@ Then we need to install python library (cSHAKElib requiring).
 $ sudo pip install pycryptodome
 
 After that we need to get clone from github.
+
 $ git clone https://github.com/Hemoth/cSHAKE.git
 
 Finally, we can use this command to run the implementation.
 
 $ python cSHAKE/cSHAKElib/test_cSHAKE.py
+
 $ python cSHAKE/cSHAKEPython/test_cSHAKE.py
 
 API examples
 
 output = cSHAKE128(inputString, outputLength, customParameter)
+
 output = cSHAKE256(inputString, outputLength, customParameter)
